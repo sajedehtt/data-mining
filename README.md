@@ -1,2 +1,2 @@
- Exercises for Section 2.3
+# Exercises for Section 2.3
  
