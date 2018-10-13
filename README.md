@@ -3,7 +3,7 @@
 #### (a) The largest integer.
 #### map:     For each tuple t, emit a key/value pair (t, t) 
 #### Reduce:    Apply max to the list of all key
-Emit the key/value pair (x,x), where x = max ([t] t in key value)
+Emit the key/value pair (t,x), where x = max ([t] t in key value)
 
  #### (b) The average of all the integers.
 #### map:     For each tuple t, emit a key/value pair (t, t) 
