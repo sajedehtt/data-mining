@@ -1,5 +1,5 @@
 ## Exercises for Section 2.3
-### **Exercise 2.3.1** . Design map-reduce algorithms to take a very large ?le of integers and produce as output:
+### **Exercise 2.3.1** . Design map-reduce algorithms to take a very large file of integers and produce as output:
 #### (a) The largest integer.
  **map**:     For each tuple t, emit a key/value pair (1, t).
  **Reduce**:     key 1 represent a group, with values [t1, t2, …, tn]. Apply max to the list of all value. Emit the key/value pair (1,x), where x = max([t1, t2, …, tn])
