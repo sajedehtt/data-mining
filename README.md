@@ -27,5 +27,5 @@ the mapreduce is as same as the case that matrix is square. indeed, when we divi
 **Map**: For each tuple t in R, check if tsatisfies C If so, emit a key/value pair (t, 1) **Reduce**:  For each key value (t,[1,1,..,1]),emit a key/value pair (t,sum[1,...,1]). 
 #### **Exercise 2.3.5**.The relational-algebra operation R(A,B) *_ [B<C] S(C,D) produces all tuples (a,b,c,d) such that tuple (a,b) is in relation R, tuple (c,d) is in S, and b < c. Give a map-reduce implementation of this operation, assuming R and S are sets.
  **map**:   For a tuple (a,b) in R emit a key/value pair (b, (‘R’,a)) 
-   For a tuple (c,d) in S, emit a key/value pair(c, (‘S’,d)). **Reduce**:for each (b,(‘R’,a)) camparison it with all (c, (‘S’,d)) if b< key c then  emit a key/value pair (b, (a,b,c,d)) Otherwise, emit a key/value pair (b, NULL)
+   For a tuple (c,d) in S, emit a key/value pair(c, (‘S’,d)). **Reduce**:for each (b,(‘R’,a)) camparison it with all (c, (‘S’,d)) if b<c then  emit a key/value pair (b, (a,b,c,d)) Otherwise, emit a key/value pair (b, NULL)
 
