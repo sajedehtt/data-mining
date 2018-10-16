@@ -11,7 +11,7 @@
  #### (d) The count of the number of distinct integers in the input.
  at first we apply map and reduce in (b) to have The same set of integers, but with each integer appearing only once. then **map**:For each tuple t, emit a key/value pair (a, 1) so we have key/value (a,{1,1,...,1}). **Reduce**: emit a key/value pair(a,x)
  where x= sum[1,1,1...,1].
-### Exercise 2.3.2. :Our formulation of matrix-vector multiplication assumed that the matrix M was square. Generalize the algorithm to the case where M is an r-by-c matrix for some number of rows r and columns c.:
+#### Exercise 2.3.2. :Our formulation of matrix-vector multiplication assumed that the matrix M was square. Generalize the algorithm to the case where M is an r-by-c matrix for some number of rows r and columns c.:
 the mapreduce is as same as the case that matrix is square. indeed, when we divide the matrix into vertical stripes or divide it into squre matrix is not important the last vertical diden"t have the same size or some spilite isn't a squre.
 
  **Exercise 2.3.3**. In the form of relational algebra implemented in SQL, relations are not sets, but bags; that is, tuples are allowed to appear more than once. There are extended deﬁnitions of union, intersection, and difference for bags, which we shall deﬁne below. Write map-reduce algorithms for computing the following operations on bags R and S:
