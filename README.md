@@ -9,6 +9,6 @@
 #### (c) The same set of integers, but with each integer appearing only once.
 ### **Exercise 2.3.5**: 
 #### map:   For a tuple (a,b) in R emit a key/value pair (b, (‘R’,a)) 
-  #### For a tuple (c,d) in S, emit a key/value pair(c, (‘R’,d))
-#### Reduce: for each (b, (‘R’,a)) and (c, (‘R’,d)) if key b< key c then  emit a key/value pair ((a,b),(c,d)) Otherwise, emit a key/value pair (t, NULL)
+   For a tuple (c,d) in S, emit a key/value pair(c, (‘R’,d))
+ Reduce: for each (b, (‘R’,a)) and (c, (‘R’,d)) if key b< key c then  emit a key/value pair ((a,b),(c,d)) Otherwise, emit a key/value pair (t, NULL)
 
